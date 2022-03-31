@@ -36,6 +36,7 @@ alcatel_sros_show_lag.textfsm, .*, alcatel_sros, show lag
 arista_eos_show_mac_security_participants_detail.textfsm, .*, arista_eos, sh[[ow]] ma[[c]] secu[[rity]] part[[icipants]] det[[ail]]
 arista_eos_show_interfaces_transceiver_detail.textfsm, .*, arista_eos, sh[[ow]] inte[[rfaces]] tr[[ansceiver]] de[[tail]]
 arista_eos_show_mac_security_mka_counters.textfsm, .*, arista_eos, sh[[ow]] ma[[c]] secu[[rity]] mk[[a]] count[[ers]]
+arista_eos_show_logging_threshold_errors.textfsm, .*, arista_eos, sh[[ow]] log[[ging]] th[[reshold]] er[[rors]]
 arista_eos_show_environment_temperature.textfsm, .*, arista_eos, sh[[ow]] en[[vironment]] t[[emperature]]
 arista_eos_show_interfaces_description.textfsm, .*, arista_eos, sh[[ow]] int[[erfaces]] des[[cription]]
 arista_eos_show_interfaces_transceiver.textfsm, .*, arista_eos, sh[[ow]] inte[[rfaces]] tr[[ansceiver]]
