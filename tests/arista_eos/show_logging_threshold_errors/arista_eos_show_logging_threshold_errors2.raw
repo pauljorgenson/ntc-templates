@@ -1,0 +1,15 @@
+Mar 31 14:37:09 localhost Bootstrap - CRITICAL: #######################################
+Mar 31 14:37:09 localhost Bootstrap - CRITICAL: #       POST Device Details Request    #
+Mar 31 14:37:09 localhost Bootstrap - CRITICAL: # URL: http://ztp-paulj.dev.net-tools.only.sap/v1/ztp/options    #
+Mar 31 14:37:09 localhost Bootstrap - CRITICAL: # Data Sent: {"model": "vEOS", "version": "4.25.2F", "systemmac": "52:54:00:4e:09:95", "serialnumber": "", "virtual": "KVM"}
+Mar 31 14:37:10 localhost Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Mar 31 14:37:10 localhost Bootstrap - CRITICAL: Running Version 4.25.2F EQUALS Intended Version vEOS-lab-4.25.2F.swi
+Mar 31 14:37:10 localhost Bootstrap - CRITICAL: Sending request to http://ztp-paulj.dev.net-tools.only.sap/v1/ztp/config [ 0 ]
+Mar 31 14:36:57 localhost ZeroTouch: %ZTP-6-DHCPv4_QUERY: Sending DHCPv4 request on  [ Ethernet1, Ethernet2, Ethernet3, Ethernet4, Ethernet5, Ethernet6, Ethernet7, Ethernet8, Ethernet9, Ethernet10, Ethernet11, Ethernet12, Ethernet13, Ethernet14, Ethernet15, Ethernet16, Ethernet17, Ethernet18, Ethernet19, Ethernet20, Ethernet21, Ethernet22, Ethernet23, Ethernet24, Ethernet25, Ethernet26, Ethernet27, Ethernet28, Ethernet29, Ethernet30, Ethernet31, Ethernet32, Ethernet33, Ethernet34, Ethernet35, Ethernet36, Ethernet37, Ethernet38, Ethernet39, Ethernet40, Ethernet41, Ethernet42, Ethernet43, Ethernet44, Ethernet45, Ethernet46, Ethernet47, Ethernet48, Ethernet49, Ethernet50, Ethernet51, Ethernet52, Management1 ]
+Mar 31 14:37:01 localhost Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to down
+Mar 31 14:37:05 localhost ZeroTouch: %ZTP-6-CONFIG_DOWNLOAD_SUCCESS: Successfully downloaded config script from http://ztp-paulj.dev.net-tools.only.sap/v1/ztp/bootstrap?vendor=arista
+Mar 31 14:37:05 localhost Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5254.0091.45d9 and portId "Management1" added on interface Management1
+Mar 31 14:37:10 localhost Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'CapiApp' to start in role 'ActiveSupervisor'
+Mar 31 14:37:10 localhost ProcMgr-worker: %PROCMGR-7-NEW_PROCESSES: New processes configured to run under ProcMgr control: ['CapiApp']
+Mar 31 14:37:10 localhost ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'CapiApp' starting with PID=10189 (PPID=8226) -- execing '/usr/bin/CapiApp'
+Mar 31 14:39:11 evpn-1101 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.25.2F
