@@ -1,0 +1,22 @@
+Value Required MONTH (\S+)
+Value DAY_OF_MONTH (\d+)
+Value TIMESTAMP (\d+:\d+:\d+)
+Value HOSTNAME (\S+)
+Value COMPONENT (\S+)
+Value PROCESS (\S+)
+Value SEVERITY (\d)
+Value EVENT (\S+)
+Value EVENT_DETAIL (.*)
+Value TIMES_REPEATED (\d+)
+
+Start
+  # Look for a log line but don't capture anything yet
+  ^\S+\s+\d+\s+\d+:\d+:\d+\s\S+\s -> Continue.Record
+  # Now capture but don't record since we still need to check the line after
+  ^${MONTH}\s+${DAY_OF_MONTH}\s+${TIMESTAMP} ${HOSTNAME}\s+${COMPONENT}:\s+%${PROCESS}-${SEVERITY}-${EVENT}: ${EVENT_DETAIL}.*$$ -> Continue
+  # If line after a log messages indicates repetition, add that to the record
+  # The previous log line will be recorded with the repetition count after it
+  # loops state back to the top state and doesn't match
+  ^.*last message repeated ${TIMES_REPEATED} times
+  # Because of how the above expression wraps around back on itself we can't use
+  # The typical ^. -> Error clause at the end
