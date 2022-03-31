@@ -1,103 +1,12 @@
-May 20 14:36:26 A7048T ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=1650)
+May 20 14:39:24  Aaa: last message repeated 1 time
 May 20 14:36:27 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'PhyBcm54980' starting with PID=2386 (PPID=1650) -- execing '/usr/bin/PhyBcm54980'
-May 20 14:36:30 A7048T Fru: %FRU-6-POWERSUPPLY_INSERTED: Power Supply in slot 2 has been inserted
-May 20 14:36:30 A7048T Fru: %FRU-6-POWERSUPPLY_INSERTED: Power Supply in slot 1 has been inserted
-May 20 14:36:31 A7048T Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'Pmbus' to start in role 'ActiveSupervisor'
-May 20 14:36:31 A7048T Fru: %FRU-6-FAN_INSERTED: Fan tray 3 has been inserted. model: FAN-7000-F serial number: N/A
-May 20 14:36:31 A7048T Launcher: %LAUNCHER-6-PROCMGR_WARMSTART: Initiating warm start of 'ProcMgr (worker)'
-May 20 14:36:31 A7048T Fru: %FRU-6-FAN_INSERTED: Fan tray 2 has been inserted. model: FAN-7000-F serial number: N/A
 May 20 14:36:31 A7048T Fru: %FRU-6-FAN_INSERTED: Fan tray 1 has been inserted. model: FAN-7000-F serial number: N/A
-May 20 14:36:31 A7048T Fru: %FRU-6-FAN_INSERTED: Fan tray 4 has been inserted. model: FAN-7000-F serial number: N/A
-May 20 14:36:31 A7048T ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=1650)
-May 20 14:36:32 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'Pmbus' starting with PID=2586 (PPID=1650) -- execing '/usr/bin/PmbusPowerSupply'
 May 20 14:36:32 A7048T Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to up
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SandTcam' to start in role 'ActiveSupervisor'
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SandL3Unicast' to start in role 'ActiveSupervisor'
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SandMcast' to start in role 'ActiveSupervisor'
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCMGR_WARMSTART: Initiating warm start of 'ProcMgr (worker)'
-May 20 14:36:35 A7048T ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=1650)
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCESS_START: Configuring process 'SandSlice' to start in role 'ActiveSupervisor'
-May 20 14:36:35 A7048T Launcher: %LAUNCHER-6-PROCMGR_WARMSTART: Initiating warm start of 'ProcMgr (worker)'
-May 20 14:36:36 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SandL3Unicast' starting with PID=2799 (PPID=1650) -- execing '/usr/bin/SandL3Unicast'
-May 20 14:36:36 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SandMcast' starting with PID=2801 (PPID=1650) -- execing '/usr/bin/SandMcast'
-May 20 14:36:36 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SandTcam' starting with PID=2802 (PPID=1650) -- execing '/usr/bin/SandTcam'
-May 20 14:36:36 A7048T ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=1650)
-May 20 14:36:36 A7048T ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: 'SandSlice' starting with PID=2851 (PPID=1650) -- execing '/usr/bin/SandSlice'
-May 20 14:36:39 A7048T PowerManager: %PWRMGMT-4-INPUT_POWER_LOSS: PowerSupply1 has lost input power.
-May 20 14:37:02 A7048T Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0014.1c57.a4a9 and portId "Fa1/0/37" added on interface Management1
-May 20 14:37:03 A7048T SandSlice: %SAND-6-INIT_SUCCEEDED: Initialization of FixedSystem switch asics succeeded.
-May 20 14:37:08 A7048T Stp: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is 00:1c:73:61:78:a1 (this switch)
-May 20 14:37:09 A7048T Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
-May 20 14:37:09 A7048T Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
-May 20 14:37:29 A7048T Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
-May 20 14:37:37 A7048T Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 0014.1c57.a4af and portId "Fa1/0/43" added on interface Ethernet1
-May 20 14:37:44 A7048T Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
-May 20 14:39:17 A7048T Aaa: %AAA-4-REMOTE_LOGIN_DENIED_BY_POLICY: Remote login from 10.1.100.200 denied for user admin due to authentication policy
-May 20 14:39:24  Aaa: last message repeated 2 times
 May 20 14:39:24 A7048T SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
-May 20 14:42:13 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by ntc on vty3 (10.1.100.200)
-May 20 14:43:21 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by ntc on vty3 (10.1.100.200)
-May 24 12:35:36 A7048T Aaa: %AAA-4-REMOTE_LOGIN_DENIED_BY_POLICY: Remote login from 10.1.100.200 denied for user admin due to authentication policy
-May 24 12:36:21  Aaa: last message repeated 2 times
 May 24 20:17:22 A7048T Aaa: %AAA-4-REMOTE_LOGIN_DENIED_BY_POLICY: Remote login from 10.1.100.200 denied for user admin due to authentication policy
 May 24 20:18:47  Aaa: last message repeated 5 times
-Jun  1 10:04:14 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by ntc on vty3 (193.138.50.80)
-Jun  1 10:04:54 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by ntc on vty3 (193.138.50.80)
-Jun  1 10:04:56 A7048T Cli: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by ntc on vty3 (193.138.50.80).
-Jun 17 07:48:49 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by nautobot on vty3 (193.138.58.70)
-Jun 17 07:49:20 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by nautobot on vty3 (193.138.58.70)
-Jun 17 07:49:22 A7048T Cli: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by nautobot on vty3 (193.138.58.70).
-Jun 17 07:51:49 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by nautobot on vty3 (193.138.58.70)
-Jun 17 07:53:30 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by nautobot on vty3 (193.138.58.70)
-Jun 17 11:00:15 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by nautobot on vty3 (193.138.58.70)
-Jun 17 11:00:23 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by nautobot on vty3 (193.138.58.70)
-Jun 17 11:00:24 A7048T Cli: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by nautobot on vty3 (193.138.58.70)
-Aug 23 14:47:33 A7048T Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by ntc on vty3 (10.1.100.200)
-Aug 23 14:47:48 A7048T Cli: %SYS-5-CONFIG_I: Configured from console by ntc on vty3 (10.1.100.200)
-Oct 26 08:06:26 A7048T Aaa: %AAA-4-REMOTE_LOGIN_DENIED_BY_POLICY: Remote login from 10.1.100.200 denied for user admin due to authentication policy
-Mar 25 19:36:36 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from learning to forwarding
-Mar 25 19:36:36 eos-spine1 Rib: %AGENT-6-INITIALIZED: Agent 'Rib' initialized; pid=2834
-Mar 25 19:36:38 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet3 instance MST0 moving from discarding to learning
-Mar 25 19:36:38 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet3 instance MST0 moving from learning to forwarding
 Mar 25 19:36:39 eos-spine1 Rib: %RIB-5-IGP_CONVERGED: IGP protocols in VRF default have converged and their routes are in FIB
-Mar 25 19:36:39 eos-spine1 Rib: %RIB-5-ROUTE_READY: Routes in VRF default are ready and available in FIB
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet7 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet8 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet12 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet9 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet16 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet4 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet7 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet8 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet12 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet9 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet16 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet4 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet15 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet5 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet14 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet11 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet19 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet6 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet13 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet10 instance MST0 moving from discarding to learning
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet15 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet5 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet14 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet11 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet19 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet6 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet13 instance MST0 moving from learning to forwarding
-Mar 25 19:36:56 eos-spine1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet10 instance MST0 moving from learning to forwarding
 Mar 25 19:36:58 eos-spine1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 2c6b.f5d6.f7c0 and portId "ge-0/0/3" added on interface Ethernet4
-Mar 25 19:37:05 eos-spine1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5254.00d6.176c and portId "Ethernet2" added on interface Ethernet3
-Mar 25 19:37:28 eos-spine1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
 Mar 25 19:38:36 eos-spine1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
 Aug 23 14:46:35 A7048T Aaa: %AAA-4-REMOTE_LOGIN_DENIED_BY_POLICY: Remote login from 10.1.100.200 denied for user admin due to authentication policy
 Aug 23 14:47:33  Aaa: last message repeated 4 times
