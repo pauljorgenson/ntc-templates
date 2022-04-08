@@ -12,7 +12,7 @@ Start
   # Old format: Jun 17 07:53:30 A7048T Cli: %SYS-5-CONFIG_I: Configured from console
   ^\S+\s+\d+\s+\d+:\d+:\d+\s\S+\s -> Continue.Record
   # New format: 2022-04-07T17:49:35.296655+00:00 evpn-1101 Aaa: 342: %AAA-4-AUTHN_FALLBACK: Authentication failed 
-  ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d+[+]\d{2}:\d{2}\s\S+\s\S+:\s+(\d+:\s)?%\S+-\d-\S+:\s.*$
+  ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d+[+]\d{2}:\d{2}\s\S+\s\S+:\s+(\d+:\s)?%\S+-\d-\S+:\s.*$$ -> Continue.Record
   # Now capture but don't record since we still need to check the line after
   # Old format
   ^${TIMESTAMP}\s${HOSTNAME}\s+${COMPONENT}:\s+%${PROCESS}-${SEVERITY}-${EVENT}:\s${EVENT_DETAIL}.*$$ -> Continue
