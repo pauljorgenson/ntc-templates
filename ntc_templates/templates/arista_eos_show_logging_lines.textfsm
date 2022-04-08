@@ -1,6 +1,4 @@
-Value Required MONTH (\S+)
-Value DAY_OF_MONTH (\d+)
-Value TIMESTAMP (\d+:\d+:\d+)
+Value Required TIMESTAMP (.*\d{2}:\d{2})
 Value HOSTNAME (\S+)
 Value COMPONENT (\S+)
 Value PROCESS (\S+)
@@ -11,9 +9,15 @@ Value TIMES_REPEATED (\d+)
 
 Start
   # Look for a log line but don't capture anything yet
+  # Old format: Jun 17 07:53:30 A7048T Cli: %SYS-5-CONFIG_I: Configured from console
   ^\S+\s+\d+\s+\d+:\d+:\d+\s\S+\s -> Continue.Record
+  # New format: 2022-04-07T17:49:35.296655+00:00 evpn-1101 Aaa: 342: %AAA-4-AUTHN_FALLBACK: Authentication failed 
+  ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d+[+]\d{2}:\d{2}\s\S+\s\S+:\s+(\d+:\s)?%\S+-\d-\S+:\s.*$
   # Now capture but don't record since we still need to check the line after
-  ^${MONTH}\s+${DAY_OF_MONTH}\s+${TIMESTAMP} ${HOSTNAME}\s+${COMPONENT}:\s+%${PROCESS}-${SEVERITY}-${EVENT}: ${EVENT_DETAIL}.*$$ -> Continue
+  # Old format
+  ^${TIMESTAMP}\s${HOSTNAME}\s+${COMPONENT}:\s+%${PROCESS}-${SEVERITY}-${EVENT}:\s${EVENT_DETAIL}.*$$ -> Continue
+  # New format
+  ^${TIMESTAMP}\s${HOSTNAME}\s+${COMPONENT}:\s+(\d+:\s)?%${PROCESS}-${SEVERITY}-${EVENT}:\s${EVENT_DETAIL}.*$$ -> Continue
   # If line after a log messages indicates repetition, add that to the record
   # The previous log line will be recorded with the repetition count after it
   # loops state back to the top state and doesn't match
