@@ -1,0 +1,130 @@
+Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level critical
+    Persistent logging: disabled
+    Monitor logging: level critical
+    Synchronous logging: level critical
+    Trap logging: level notifications
+        Logging source-interface 'Loopback10' in VRF default
+        Logging to '10.17.120.130' port 514 in VRF default via udp
+        Logging to '169.145.33.19' port 514 in VRF default via udp
+    Sequence numbers: enabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dot1xhttp                  debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+influxtelemetry            debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+postcardtelemetry          debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+2022-04-07T17:45:50.620655+00:00 evpn-1101 Ebra: 110: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet8, changed state to up
+2022-04-07T17:45:51.442402+00:00 evpn-1101 Ebra: 161: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet26, changed state to up
+2022-04-07T17:45:51.515830+00:00 evpn-1101 Stp: 162: %SPANTREE-6-ROOTCHANGE: Root changed for instance MST0: new root interface is (none), new root bridge mac address is 52:54:00:72:b5:34 (this switch)
+2022-04-07T17:45:51.860026+00:00 evpn-1101 IpRib: 215: %IPRIB-5-RIBREADY_IGP: IGP protocols in VRF CC-MGMT have converged
+2022-04-07T17:45:51.860160+00:00 evpn-1101 IpRib: 216: %IPRIB-5-RIBREADY_PROTO: All protocols in VRF CC-MGMT have converged
+2022-04-07T17:45:51.860257+00:00 evpn-1101 IpRib: 217: %IPRIB-5-RIBREADY_FIB: All routes in VRF CC-MGMT are available in FIB
+2022-04-07T17:45:52.683817+00:00 evpn-1101 Lldp: 218: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 5254.0025.5e89 and portId "Ethernet1" added on interface Ethernet8
